@@ -21,7 +21,7 @@
 			$barzelletta[1]="Cosa fa Picasso in discoteca? Il cubista!"	
 			$barzelletta[2]="Ieri ho litigato con la mia stampante: le ho detto di abbassare il toner!"
 			$barzelletta[3]="pippo erba"
-			$i= srand(0,3);
+			$i= rand(0,3);
 				$parameters = array('chat_id' => $chatId, "text" => $barzelletta [$i]);
 				
 		}
