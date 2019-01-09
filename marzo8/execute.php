@@ -47,7 +47,7 @@
 		//ho ricevuto e che si trova nella variabile $text
 		$parameters = array('chat_id' => $chatId, "text" => $text);
 		
-		if($text="barzelletta")
+		if($text=="barzelletta")
 		{
 			$barzelletta[0]="Qual'è il colmo per un collezionista di orologi? Non avere il tempo per indossarli tutti!";
 			$barzelletta[1]="Cosa fa Picasso in discoteca? Il cubista!";	
