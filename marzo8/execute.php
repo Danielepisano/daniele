@@ -15,6 +15,16 @@
 		{
 		  exit;
 		}
+		if($text="barzelletta")
+		{
+			$barzelletta[0]="Qual'è il colmo per un collezionista di orologi? Non avere il tempo per indossarli tutti!"
+			$barzelletta[1]="Cosa fa Picasso in discoteca? Il cubista!"	
+			$barzelletta[2]="Ieri ho litigato con la mia stampante: le ho detto di abbassare il toner!"
+			$barzelletta[3]="pippo erba"
+			$i= srand(0,3);
+				$parameters = array('chat_id' => $chatId, "text" => $barzelletta [$i]);
+				
+		}
 
         //altrimenti proseguo e vado a leggere il messaggio salvandolo nella variabile 
 		//message
