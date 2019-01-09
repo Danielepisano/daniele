@@ -15,16 +15,6 @@
 		{
 		  exit;
 		}
-		if($text="barzelletta")
-		{
-			$barzelletta[0]="Qual'è il colmo per un collezionista di orologi? Non avere il tempo per indossarli tutti!";
-			$barzelletta[1]="Cosa fa Picasso in discoteca? Il cubista!";	
-			$barzelletta[2]="Ieri ho litigato con la mia stampante: le ho detto di abbassare il toner!";
-			$barzelletta[3]="pippo!";
-			$i= rand(0,3);
-				$parameters = array('chat_id' => $chatId, "text" => $barzelletta [$i]);
-				
-		}
 
         //altrimenti proseguo e vado a leggere il messaggio salvandolo nella variabile 
 		//message
@@ -57,7 +47,17 @@
 		//ho ricevuto e che si trova nella variabile $text
 		$parameters = array('chat_id' => $chatId, "text" => $text);
 		
-	
+		if($text="barzelletta")
+		{
+			$barzelletta[0]="Qual'è il colmo per un collezionista di orologi? Non avere il tempo per indossarli tutti!";
+			$barzelletta[1]="Cosa fa Picasso in discoteca? Il cubista!";	
+			$barzelletta[2]="Ieri ho litigato con la mia stampante: le ho detto di abbassare il toner!";
+			$barzelletta[3]="pippo!";
+			$i= rand(0,3);
+				$parameters = array('chat_id' => $chatId, "text" => $barzelletta [$i]);
+				
+		}
+
 		
 		//aggiungo il comando di invio
 		//e lo invio
