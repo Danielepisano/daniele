@@ -47,7 +47,7 @@
 		//ho ricevuto e che si trova nella variabile $text
 		$parameters = array('chat_id' => $chatId, "text" => $text);
 		
-		if($text=="barzelletta")
+		if($text=="barzelletta"||$text=="/barzelletta")
 		{
 			$barzelletta[0]="Qual'è il colmo per un collezionista di orologi? Non avere il tempo per indossarli tutti!";
 			$barzelletta[1]="Cosa fa Picasso in discoteca? Il cubista!";	
@@ -57,11 +57,11 @@
 				$parameters = array('chat_id' => $chatId, "text" => $barzelletta[$i]);
 				
 		}
-		if($text=="audio1")
+		if($text=="audio1"||$text=="/audio1")
 		{	
 			sendAudio($chatId,"vivoperlei.mp3",false,"Vivo per lei",$api);
 		}
-		if($text=="audio")
+		if($text=="audio"||$text=="/audio")
 		{	
 			sendAudio($chatId,"tidedicoilsilenzio.mp3",false,"Ti dedico il silenzio",$api);
 		}
@@ -71,7 +71,7 @@
 			$parameters = array('chat_id' => $chatId, "text" => $text);
 			
 		}
-		if($text=="doc")
+		if($text=="doc"||$text=="/doc")
 		{
 			sendDocument($chatId,"testo.pdf",false,"il mio documento",$api);
 		}
