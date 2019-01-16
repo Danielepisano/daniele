@@ -57,6 +57,10 @@
 				$parameters = array('chat_id' => $chatId, "text" => $barzelletta[$i]);
 				
 		}
+		if($text=="audio1")
+		{	
+			sendAudio($chatId,"tidedicoilsilenzio.mp3",false,"il mio audio",$api);
+		}
 		if($text=="data"||$text=="/data")
 		{
 			$text="La data odierna è: ".date("d.m.y");
