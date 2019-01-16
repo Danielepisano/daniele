@@ -59,7 +59,7 @@
 		}
 		if($text=="audio1")
 		{	
-			sendAudio($chatId,"tidedicoilsilenzio.mp3",false,"il mio audio",$api);
+			sendAudio($chatId,"vivoperlei.mp3",false,"il mio audio",$api);
 		}
 		if($text=="data"||$text=="/data")
 		{
