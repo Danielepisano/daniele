@@ -61,7 +61,7 @@
 		{	
 			sendAudio($chatId,"vivoperlei.mp3",false,"Vivo per lei",$api);
 		}
-		if($text=="audio1")
+		if($text=="audio")
 		{	
 			sendAudio($chatId,"tidedicoilsilenzio.mp3",false,"Ti dedico il silenzio",$api);
 		}
