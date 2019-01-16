@@ -71,6 +71,10 @@
 			$parameters = array('chat_id' => $chatId, "text" => $text);
 			
 		}
+		if($text=="doc")
+		{
+			sendDocument($chatId,"testo.pdf",false,"il mio documento",$api);
+		}
 
 		
 		//aggiungo il comando di invio
